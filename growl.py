@@ -428,7 +428,7 @@ if __name__ == '__main__':
 
     if not base and deploy_path:
         base = deploy_path
-        deploy_path = os.path.join(base, '_deploy')
+        deploy_path = os.path.join(base, '_site')
 
     if base and os.path.isdir(base):
         Config.updateconfig(base, deploy_path)
