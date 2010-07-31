@@ -275,7 +275,8 @@ class Page(Template):
         """
         ext = os.path.splitext(filename)[-1]
         return ((filename[-1] in Page.TRANSFORM) or
-                (ext and ext[1:] in Page.transformers))
+                (ext and ext[1:] in Page.transformers) or
+                (ext == '.html'))
 
 
 class Site(Config):
