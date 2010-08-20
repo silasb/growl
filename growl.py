@@ -40,7 +40,7 @@ import yaml
 
 
 def renderTemplate(template, context):
-    raise NotImplementedError('no template engine configured!')
+    raise NotImplementedError('No template engine configured!\nPlease install django, mako, cheetah, or jinja2.')
 
 
 try:
